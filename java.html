@@ -1,0 +1,73 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>log with js</title>
+    <style>
+        #bg{
+           margin-left: 0.5cm;
+        }
+        #cv{
+            margin-left: 0.7cm;
+        }
+        .di{
+            width: 45%;
+            background-color: darkolivegreen;
+        }
+        .sp{
+            border-radius: 100px 100px;
+            border: none;
+        }
+    </style>
+    <script type="text/javascript">
+        function valiate()
+        {
+            var username=document.getElementById("bg");
+            var password=document.getElementById("cv");
+            if(username.value.trim()=="")
+            {
+                alert("enter  your name please");
+                username.style.border="solid 4px red";
+                return false;
+            }
+            else if(password.value.trim()=="")
+            {
+                alert("pleas enter password" );
+                password.style.border="solid 4px red";
+                return false;
+            }
+            else if(password.value.length<5)
+            {
+             alert("password too short")
+             return false;
+            }
+            else if(password.value.length>8)
+            {
+             alert("password is very long")
+             return false ;  
+            }
+            else
+            {
+                return true
+            }
+        }
+    </script>
+</head>
+<body>
+   
+    <form action="ni sign up.html" onsubmit="return valiate()" id="ss" autocomplete="off"
+        <center> 
+        
+    
+    <marquee behavior="" direction="left"><h3><b><u><i>your well come to our site</i></u></b></h3></marquee>
+    <label for="">User name</label>
+    <input type="text" name="" id="bg" placeholder="enter your name"><br><br>
+    <label for=""> Password</label>
+    <input type="password" name="" id="cv" placeholder="enter your pass"><br><br>
+    <button type="submit" class="sp">Send</button>
+
+</center>
+</form>
+</body>
+</html>
